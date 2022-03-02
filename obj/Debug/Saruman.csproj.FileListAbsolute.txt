@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\Saruman\bin\Debug\Saruman.exe.config
+C:\Users\Administrator\source\repos\Saruman\bin\Debug\Saruman.exe
+C:\Users\Administrator\source\repos\Saruman\bin\Debug\Saruman.pdb
+C:\Users\Administrator\source\repos\Saruman\obj\Debug\Saruman.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Saruman\obj\Debug\Saruman.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Saruman\obj\Debug\Saruman.exe
+C:\Users\Administrator\source\repos\Saruman\obj\Debug\Saruman.pdb
